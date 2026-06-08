@@ -62,7 +62,9 @@ LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDI_ICON2               ICON                    "C:\\Users\\Patrice\\source\\repos\\@Ressources\\Anciens\\1 (9).ico"
+IDI_ICON3               ICON                    "X:\\Icones\\002.ico"
+
+IDI_ICON4               ICON                    "X:\\Icones\\00000003.ico"
 
 #endif    // Français (France) resources
 /////////////////////////////////////////////////////////////////////////////
@@ -74,16 +76,6 @@ IDI_ICON2               ICON                    "C:\\Users\\Patrice\\source\\rep
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
 LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
 #pragma code_page(1252)
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Icon
-//
-
-// Icon with lowest ID value placed first to ensure application icon
-// remains consistent on all systems.
-IDI_ICON1               ICON                    "Divano.ico"
-
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -138,7 +130,7 @@ BEGIN
     PUSHBUTTON      "&Créer",IDOK,123,157,50,14
     PUSHBUTTON      "Abandonner",IDCANCEL,264,157,50,14
     LTEXT           "00",IDC_PC,3,49,80,8,WS_DISABLED
-    RTEXT           "Static",IDC_HORRAIRE,76,47,238,8,SS_REALSIZECONTROL
+	RTEXT           "Static", IDC_HORRAIRE, 76, 47, 238, 8, WS_VISIBLE 
     LTEXT           "Exécutable á modifier",IDC_STATIC,11,79,70,8
     EDITTEXT        IDC_EDIT1,11,89,260,12,ES_AUTOHSCROLL
     PUSHBUTTON      "&Ouvrir",ID_OPEN,273,88,38,14
@@ -146,7 +138,7 @@ BEGIN
     EDITTEXT        IDC_EDIT2,11,119,298,12,ES_AUTOHSCROLL | ES_READONLY
     CONTROL         VK_NUMPAD9,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,317,46,WS_EX_TRANSPARENT
     PUSHBUTTON      "&Créer && Exécuter",IDOK2,177,157,84,14
-    ICON            IDI_ICON1,IDC_STATIC,0,160,21,20
+    ICON            VK_NUMPAD5,IDC_STATIC,0,160,21,20
 END
 
 

@@ -2,7 +2,6 @@
 // fichier Include Microsoft Visual C++.
 // Utilisé par AddLookXPtoEXE.rc
 //
-#include "windows.h"
 #define SW_HIDE                         0
 #define HIDE_WINDOW                     0
 #define WM_NULL                         0x0000
@@ -602,6 +601,7 @@
 #define HTHELP                          21
 #define LANG_POLISH                     0x15
 #define SUBLANG_SPANISH_US              0x15
+#define VK_IME_ON                       0x16
 #define WM_ENDSESSION                   0x0016
 #define LANG_PORTUGUESE                 0x16
 #define VK_JUNJA                        0x17
@@ -613,6 +613,7 @@
 #define VK_HANJA                        0x19
 #define VK_KANJI                        0x19
 #define LANG_RUSSIAN                    0x19
+#define VK_IME_OFF                      0x1A
 #define WM_WININICHANGE                 0x001A
 #define LANG_BOSNIAN                    0x1a
 #define LANG_CROATIAN                   0x1a
@@ -808,8 +809,10 @@
 #define IDI_ICON2                       106
 #define VK_ADD                          0x6B
 #define LANG_QUECHUA                    0x6b
+#define IDI_ICON3                       107
 #define VK_SEPARATOR                    0x6C
 #define LANG_SOTHO                      0x6c
+#define IDI_ICON4                       108
 #define VK_SUBTRACT                     0x6D
 #define LANG_BASHKIR                    0x6d
 #define VK_DECIMAL                      0x6E
@@ -1619,7 +1622,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        107
+#define _APS_NEXT_RESOURCE_VALUE        109
 #define _APS_NEXT_COMMAND_VALUE         40001
 #define _APS_NEXT_CONTROL_VALUE         1005
 #define _APS_NEXT_SYMED_VALUE           101
